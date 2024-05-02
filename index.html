@@ -3,37 +3,78 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentoria</title>
   
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <title>Mentorship</title>
 </head>
 
 <body>
   <div class="page">
-
     <header>
-      <h1>Mentoria</h1>
-      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>    
+      <h1>Mentorship</h1>
+      <p>Fill out the form below to schedule your mentoring</p>    
     </header>
       
-    <form action="submit">
+    <form id="mentorship-schedule-form">
       <fieldset>
         <legend>Personal Information</legend>
+         
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name">
+
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" />
+
+        <label for="email">Email <span>(Enter a valid email address)</span></label>
+        <input type="email" id="email" />
+
+        <label for="password">Password <span>(minimun of 6 characters)</span></label>
+        <input type="text" id="password" />
       </fieldset>
 
       <fieldset>
         <legend>Mentor Information</legend>
+        <label for="mentor-name">Your mentor's name <span>(first name)</span></label>
+        <input type="text" id="mentor-name"/>
       </fieldset>
 
       <fieldset>
         <legend>Availability</legend>
-      </fieldset>
 
+        <p>First mentoring</p>
+
+        <label for="first-mentor-date">Date <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="first-mentor-date" />
+
+        <label for="first-mentor-start-date">Start date</label>
+        <input type="time" id="first-mentor-start-date" />
+
+        <label for="first-mentor-end-date">End date</label>
+        <input type="time" id="first-mentor-end-date" />
+
+        <p>Second mentoring</p>
+
+        <label for="second-mentor-date">Date <span>(DD/MM/AAAA)</span></label>
+        <input type="date" id="second-mentor-date" />
+
+        <label for="second-mentor-start-date">Start date</label>
+        <input type="time" id="second-mentor-start-date" />
+
+        <label for="second-mentor-end-date">End date</label>
+        <input type="time" id="second-mentor-end-date" />
+      </fieldset>
     </form>
+
+    <footer>
+      <button class="button" form="mentorship-schedule-form">
+        Salvar
+      </button>
+    </footer>
   </div>
 </body>
 </html>
