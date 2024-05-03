@@ -10,6 +10,14 @@ body {
     background: #EFEFEF;
 }
 
+body {
+    color: #4E4958;
+
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 24px;   
+}
+
 body::before {
     content: '';
     width: 100%;
@@ -52,4 +60,104 @@ header p {
 
 form {
     margin-top: 58px;
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF;
+    padding: 64px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    color: #535971;
+    font-family: Staatliches;
+    line-height: 34px;  
+    font-size: 24px;
+
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E6E6F0;
+    margin-bottom: 32px;
+}
+
+.name {
+    display: flex;
+    gap: 22px;
+}
+
+.name .input-wrapper {
+    flex: 1;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    height: 56px;
+    margin-bottom: 16px;
+    background: #FAFAFC;
+}
+
+.col-1 {
+    display: flex;
+    gap: 32px;
+    
+}
+
+.col-1 > div:nth-child(1) {
+     width: 100%;
+}
+
+.start-end {
+   display: flex;
+    gap:10px;
+}
+
+.start-end div {
+    width: 140px;
+}
+
+  fieldset p {
+    color: #535971;
+    font-family: Staatliches;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+footer {
+    background: #535971; 
+
+    right: 160px;
+    
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 70px;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 58px;
+}
+
+footer button {
+    padding: 15px 40px;
+    border-radius: 20px;
+    background: #FF5374;
+    border: none;
+
+    color: #FFF;
+    font-family: Staatliches;
+    font-size: 20px;
+    line-height: 26px;
+    
+    transition: all .25s;
+}
+
+button:hover {
+    background: #d6274a;
+    cursor: pointer;
 }
