@@ -39,12 +39,15 @@
           
           <div class="input-wrapper">
             <label for="email">Email <span>(Enter a valid email address)</span></label>
-            <input type="email" id="email" />
+            <input type="email" id="email" required />
           </div>
           
           <div class="input-wrapper">
             <label for="password">Password <span>(Minimum of 6 characters)</span></label>
-            <input type="text" id="password" />
+            <input type="password"
+             id="password" 
+             required 
+             minlength="6" />
           </div>
         </div>
         </fieldset>
@@ -54,7 +57,7 @@
             <legend>Mentor Information</legend>
             <div class="input-wrapper">
               <label for="mentor-name">Your mentor's name <span>(first name)</span></label>
-              <input type="text" id="mentor-name"/>
+              <input type="text" id="mentor-name" required/>
             </div>
           </div>
         </fieldset>
@@ -67,8 +70,8 @@
               <div class="col-1">
 
                <div class="input-wrapper">
-                 <label for="first-mentor-date">Date <span>(DD/MM/AAAA)</span></label>
-                 <input type="date" id="first-mentor-date" />
+                 <label for="first-mentor-date">Date</label>
+                 <input type="date" id="first-mentor-date" required />
                </div>
                
                <div class="start-end"> 
@@ -88,8 +91,8 @@
                 <div class="col-1">
 
                   <div class="input-wrapper">
-                    <label for="second-mentor-date">Date <span>(DD/MM/AAAA)</span></label>
-                    <input type="date" id="second-mentor-date" />
+                    <label for="second-mentor-date">Date</label>
+                    <input type="date" id="second-mentor-date" required />
                   </div>
 
                   <div class="start-end"> 

@@ -102,6 +102,12 @@ input {
     height: 56px;
     margin-bottom: 16px;
     background: #FAFAFC;
+    padding: 0 20px;
+
+    color: #C1BCCC;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .col-1 {
@@ -123,11 +129,27 @@ input {
     width: 140px;
 }
 
-  fieldset p {
+fieldset p {
     color: #535971;
     font-family: Staatliches;
     font-size: 20px;
     margin-bottom: 8px;
+}
+
+fieldset span {
+    color: #C1BCCC;
+
+    font-family: Poppins;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+fieldset span:hover {
+    color: #4a4750;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
 
 footer {
